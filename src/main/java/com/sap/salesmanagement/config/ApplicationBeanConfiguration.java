@@ -2,6 +2,7 @@ package com.sap.salesmanagement.config;
 
 import org.modelmapper.Conditions;
 import org.modelmapper.ModelMapper;
+import org.springframework.boot.json.GsonJsonParser;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -31,5 +32,10 @@ public class ApplicationBeanConfiguration {
     @Bean
     public ConfigValues configValues() {
         return new ConfigValues();
+    }
+
+    @Bean
+    public GsonJsonParser jsonParser() {
+        return new GsonJsonParser();
     }
 }
