@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "emailsender.from",
+      "type": "java.lang.String",
+      "description": "The email that the mails will be send from"
+    }
+  ]
+}
